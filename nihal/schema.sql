@@ -5,7 +5,8 @@ USE yardsale_db;
 CREATE TABLE sellers(
 id INT NOT NULL AUTO_INCREMENT,
 seller_name VARCHAR(50) NOT NULL,
-seller_item INT(50) NOT NULL,
+seller_item VARCHAR(50) NOT NULL,
+seller_rating DECIMAL(3) NOT NULL,
 item_price INT(50) NOT NULL,
 date TIMESTAMP,
 PRIMARY KEY (id)
