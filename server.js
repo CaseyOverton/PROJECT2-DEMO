@@ -3,6 +3,11 @@ const express = require("express");
 const session = require("express-session");
 // Requiring passport as we've configured it
 const passport = require("./config/passport");
+
+
+const php = require("php");
+app.get("/table", (req, res) => {res.render("table.php")});
+
 require("dotenv").config();
 console.log("OUR group's name is ", process.env.SECRET_TEAM);
 
