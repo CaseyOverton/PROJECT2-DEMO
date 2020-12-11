@@ -35,6 +35,11 @@ module.exports = function(app) {
     req.logout();
     res.redirect("/");
   });
+  
+  // Route for PHP Table display
+  app.get('/table', (req, res) => {
+  res.render('table.php')
+})
 
   // Route for getting some data about our user to be used client side
   app.get("/api/user_data", (req, res) => {
