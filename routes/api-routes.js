@@ -36,7 +36,7 @@ module.exports = function(app) {
     res.redirect("/");
   });
   
-  // Route for PHP Table display
+  // Route for PHP Table displays
   app.get('/table', (req, res) => {
   res.render('table.php')
 })
