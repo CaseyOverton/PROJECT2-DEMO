@@ -8,8 +8,9 @@ const yardsaleCat = [
     "Home Decor",
     "Jewelry",
     "Miscellaneous",
-    "Outdoor",
+    "Outdoor & Garden",
     "Sporting Goods",
+    "Toys & Toddler"
 ];
 
 for (let i = 0; i < yardsaleCat.length; i++) {
