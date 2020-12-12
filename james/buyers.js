@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    const purchaseButton = $("purchase-button");
+    const purchaseButton = $(".btn btn-outline-success");
     const itemPrice = $(".item-price");
     const itemName = $(".item-name");
     const contactInfo = $(".contact-info");
