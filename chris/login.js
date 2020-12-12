@@ -1,4 +1,5 @@
 $(document).ready(() => {
+
   // Getting references to our form and inputs
   const sellerform = $("form.item");
   const sellername = $("input#seller-name-input");
@@ -35,4 +36,4 @@ $(document).ready(() => {
   });
 
   // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
-  
+ 
