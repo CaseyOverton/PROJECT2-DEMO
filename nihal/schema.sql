@@ -6,6 +6,7 @@ CREATE TABLE sellers(
 id INT NOT NULL AUTO_INCREMENT,
 seller_name VARCHAR(50) NOT NULL,
 seller_item INT(50) NOT NULL,
+  -- "item_description" added to sellers table via Sequelize
 item_price INT(50) NOT NULL,
 date TIMESTAMP,
 PRIMARY KEY (id)
