@@ -23,4 +23,6 @@ module.exports = function(app) {
   app.get("/buyers", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/members.html"));
   });
+
 };
+
