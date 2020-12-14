@@ -3,8 +3,15 @@
 
 <head>
   <title>Yard Sale</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="../public/stylesheets/main.css">
+
+  <link rel="stylesheet" href='../public/stylesheets/slider.css'>
+  <script src="../public/sliderContent/ism-2.2.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -50,43 +57,33 @@
   <!-- jumbotron end -->
 
   <!-- Carousel for random content?  -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
-      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+  <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-interval="3000" id="my-slider">
+    <ol>
+      <li>
+        <img src="../public/sliderContent/assets/apparel.jpg">
+        <div class="ism-caption ism-caption-0" data-delay='200'>Apparel</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/homeDecor.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Furniture</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/games.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Gaming</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/gardening.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Outdoors &amp; Gardening</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/gym.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Sporting Goods</div>
+      </li>
+      <li>
+        <img src='../public/sliderContent/assets/toddler.jpg'>
+        <div class="ism-caption ism-caption-0" data-delay='200'>Toys &amp; Toddlers</div>
+      </li>
     </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Random Item 1</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Random Item 2</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="..." class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Random Item 3</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
   </div>
   <!-- end of carousel -->
 

@@ -66,7 +66,13 @@ module.exports = function(sequelize, DataTypes) {
   // });
   return sellers;
 <<<<<<< HEAD
+<<<<<<< HEAD
 };
 =======
 };
 >>>>>>> 848430a2e0b1821688d28f9192fdf3fcc2bf799c
+=======
+
+};
+
+>>>>>>> 054116f7c1b19a200a631f6854c36e321f04850e
