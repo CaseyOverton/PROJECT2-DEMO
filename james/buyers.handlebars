@@ -72,30 +72,30 @@
     <div class="col-8">
         <div class="card-columns">
             <div class="card">
-                {{#each buyers}}
+                {{#each items}}
                 {{#unless purchased}}
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="item-name">Item Name</h5>
-                    <h6 class="item-price">Item Price</h6>
+                    <h5 class="item-name">{{item_name}}</h5>
+                    <h6 class="item-price">{{item_price}}</h6>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="contact-info"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  <button type="button" class="btn btn-outline-success">Purchase</button>
+                    <p class="contact-info"><small class="text-muted">Please contact your neighbor at {{seller_contact}} for payment information.</small></p>
+                  <button type="button" class="btn btn-outline-success">Status: FOR SALE!</button>
                 </div>
                 {{/unless}}
                 {{/each}}
               </div>
 
               <div class="card">
-                  {{#each buyers}}
+                  {{#each items}}
                   {{#if purchased}}
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="item-name">Item Name</h5>
-                    <h6 class="item-price">Item Price</h6>
+                    <h5 class="item-name">{{item_name}}</h5>
+                    <h6 class="item-price">{{item_price}}</h6>
                     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="contact-info"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  <button type="button" class="btn btn-outline-success">Purchase</button>
+                    <p class="contact-info"><small class="text-muted">{{seller_contact}}</small></p>
+                  <button type="button" class="btn btn-outline-success">Status: Buyer Committed!</button>
                 </div>
                 {{/if}}
                 {{/each}}
