@@ -1,8 +1,9 @@
 $(document).ready(() => {
-    const purchaseButton = $(".btn btn-outline-success");
-    const itemPrice = $(".item-price");
-    const itemName = $(".item-name");
-    const contactInfo = $(".contact-info");
+
+    const purchaseButton = $(".btn-outline-success");
+    const itemPrice = $("input.item-price");
+    const itemName = $("input.item-name");
+    const contactInfo = $("input.contact-info");
 
     purchaseButton.on("click", event => {
         event.preventDefault();
@@ -12,15 +13,15 @@ $(document).ready(() => {
             contactInfo: contactInfo.val().trim()
         };
 
-        $.ajax("/api/purchase/", {
-            type: "PUT",
-            data: purchase
+        $.ajax("/api/newitem", {
+            type: "GET",
+            data: newitem
         }).then(function () {
             location.reload();
         },
 
-        alert("For payment information, please contact seller at " + contactInfo);
-    })
+        alert("For payment information, please contact seller at " + contactInfo)
+    )
 
 })
 
