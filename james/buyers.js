@@ -26,24 +26,42 @@ $(document).ready(() => {
 })
 
 
-module.exports = function(sequelize, DataTypes) {
-    const Buyer = sequelize.define('Buyer', {
-       buyer_name: {
+module.exports = function (sequelize, DataTypes) {
+    const Item = sequelize.define('Item', {
+       item_name: {
            type: DataTypes.STRING,
            allowNull: false
        },
-       buyer_budget: {
+       item_price: {
            type: DataTypes.INTEGER,
            allowNull: false,
        },
-       purchased: {
-           type: DataTypes.BOOLEAN,
+       seller_contact: {
+           type: DataTypes.STRING,
            defaultValue: false
        },
-       buyer_rating: {
-           type: DataTypes.DECIMAL(2),
-           allowNull: true,
-           defaultValue: 0.0
-       }
-    })
+       purchased: {
+           type: DataTypes.BOOLEAN,
+           allowNull: false,
+           defaultValue: false
+       },
+    });
+    return Item;
 };
+
+$.get("/api/all", function(data) {
+    console.log("data: ", data);
+
+    if (data.length !==0) {
+        for (let i = 0; i < data.length; i++) {
+            const row = $("<div>");
+            row.addClass("item");
+
+            row.append("<p>" + data[i].item_name + " for sale.. </p>");
+            row.append("<p>" + data[i].item_price + "</p>");
+            row.append("<p>Please contact " + data[i].seller_contact + " for to exchange payment information</p>");
+
+            $("#item-area").prepend(row);
+        }
+    }
+});
