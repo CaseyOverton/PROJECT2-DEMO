@@ -27,8 +27,8 @@ module.exports = function(sequelize, DataTypes) {
     return Item;
 };
 // Syncs model with DB
-Item.sync();
+// Item.sync();
 
-// Makes the Item Model available for other files (will also create a table)
-module.exports = Item;
+// // Makes the Item Model available for other files (will also create a table)
+// module.exports = Item;
  

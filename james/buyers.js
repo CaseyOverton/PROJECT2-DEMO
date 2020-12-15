@@ -42,5 +42,6 @@ $.get("/api/all", function(data) {
 
             $("#item-area").prepend(row);
         }
-    }
+      };
+   });
 });
