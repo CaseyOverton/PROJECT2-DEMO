@@ -1,8 +1,8 @@
 $(document).ready(() => {
 
     const purchaseButton = $(".btn-outline-success");
-    const itemPrice = $("input.item-price");
-    const itemName = $("input.item-name");
+    const itemPrice = $(".item-price");
+    const itemName = $(".item-name");
     const contactInfo = $("input.contact-info");
 
     purchaseButton.on("click", event => {
@@ -22,10 +22,7 @@ $(document).ready(() => {
 
         alert("For payment information, please contact seller at " + contactInfo)
     )
-
 })
-
-
 
 
 $.get("/api/all", function(data) {
@@ -33,15 +30,20 @@ $.get("/api/all", function(data) {
 
     if (data.length !==0) {
         for (let i = 0; i < data.length; i++) {
-            const row = $("<div>");
-            row.addClass("item");
-
-            row.append("<p>" + data[i].item_name + " for sale.. </p>");
-            row.append("<p>" + data[i].item_price + "</p>");
-            row.append("<p>Please contact " + data[i].seller_contact + " for to exchange payment information</p>");
-
-            $("#item-area").prepend(row);
+            `
+            <div class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="item-name">${data[i].item_name}</h5>
+                    <h6 class="item-price">$${data[i].item_price}</h6>
+                    <p class="card-text">Item condition OR seller rating? </p>
+                    <p class="contact-info"><small class="text-muted">${data[i].seller_contact}</small></p>
+                  <button type="button" class="btn btn-outline-success">Purchase</button>
+                </div>
+              </div>
+              `
         }
       };
    });
 });
+           
