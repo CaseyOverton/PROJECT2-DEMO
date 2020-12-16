@@ -20,12 +20,3 @@ purchased BOOLEAN default false,
 date TIMESTAMP,
 PRIMARY KEY (id)
 );
-
-CREATE TABLE items(
-id INT NOT NULL AUTO_INCREMENT,
-item_name VARCHAR(25) NOT NULL,
-item_price INT(11) NOT NULL,
-seller_contact VARCHAR(35) NOT NULL,
-purchased BOOLEAN NOT NULL DEFAULT false,
-PRIMARY KEY (id)
-);

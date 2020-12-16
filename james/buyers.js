@@ -1,35 +1,32 @@
 $(document).ready(() => {
+    const yardsaleCat = [
+        "Apparel",
+        "Appliances",
+        "Automotive",
+        "Electronics",
+        "Furniture",
+        "Gaming",
+        "Home Decor",
+        "Jewelry",
+        "Miscellaneous",
+        "Outdoor & Garden",
+        "Sporting Goods",
+        "Toys & Toddler"
+    ];
 
-    const purchaseButton = $(".btn-outline-success");
-    const itemPrice = $(".item-price");
-    const itemName = $(".item-name");
-    const contactInfo = $("input.contact-info");
-
-    purchaseButton.on("click", event => {
-        event.preventDefault();
-        const purchase = {
-            itemName: itemName.val().trim(),
-            price: itemPrice.val(),
-            contactInfo: contactInfo.val().trim()
-        };
-
-        $.ajax("/api/newitem", {
-            type: "GET",
-            data: newitem
-        }).then(function () {
-            location.reload();
-        },
-
-        alert("For payment information, please contact seller at " + contactInfo)
-    )
-})
+    const buttonEl = $(".list-group-item")
+    for (let i = 0; i < yardsaleCat.length; i++){
+        const element = array[j];
+        buttonEl.append(yardsaleCat[j]);
+    };
 
 
 $.get("/api/all", function(data) {
     console.log("data: ", data);
-
+    const container = $(".card-columns")
     if (data.length !==0) {
         for (let i = 0; i < data.length; i++) {
+            container.append(
             `
             <div class="card">
                 <img class="card-img-top" src="..." alt="Card image cap">
@@ -42,6 +39,7 @@ $.get("/api/all", function(data) {
                 </div>
               </div>
               `
+            )
         }
       };
    });
