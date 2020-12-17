@@ -57,7 +57,7 @@
   <!-- jumbotron end -->
 
   <!-- Carousel for random content?  -->
-  <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-interval="3000" id="my-slider">
+  <!-- <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-interval="3000" id="my-slider">
     <ol>
       <li>
         <img src="../public/sliderContent/assets/apparel.jpg">
@@ -84,18 +84,32 @@
         <div class="ism-caption ism-caption-0" data-delay='200'>Toys &amp; Toddlers</div>
       </li>
     </ol>
-  </div>
+  </div> -->
   <!-- end of carousel -->
 
   <div class="container">
+   
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+     <div class="col-md-2">
+
+     </div>
+   
+      <div class="col-md-8 col-md-offset-3">
         <h2>Items for Sale</h2>
         <form class="item">
           <div class="form-group">
             <label for="exampleInputItem">Item description:</label>
             <input type="item" class="form-control" id="item-input" placeholder="Listing">
           </div>
+          <!-- cloudinary code -->
+          <div class='card'>
+            <img src='' id='img-preview'/>
+            <label class='file-upload-container' for='file-upload'>
+            <input id='file-upload' type='file' style='display:none;'>
+            Select and Image
+            </label>
+            </div>
+<!-- cloudinary code end -->
           <div class="form-group">
             <!-- changed type to name instead of email/was giving a needs an @ to submit error -->
             <label for="exampleInputSellerName">Seller Name:</label>
@@ -110,10 +124,15 @@
         <br />
         <p>Or sign up <a href="/">here</a></p>
       </div>
+      <div class="col-md-2">
+
+      </div>
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/login.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </body>
 
 </html>
