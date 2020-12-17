@@ -29,4 +29,4 @@ item_price INT(11) NOT NULL,
 seller_contact VARCHAR(35) NOT NULL,
 purchased BOOLEAN NOT NULL DEFAULT false,
 PRIMARY KEY (id)
-);
+); 
