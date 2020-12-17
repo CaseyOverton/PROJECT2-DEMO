@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Passport Authentication</title>
   <meta charset="UTF-8">
@@ -7,11 +8,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
   <link href="stylesheets/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      </div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">YARD SALE</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sell</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categories</a>
+        </li>
+      </ul>
+
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-light my-sm-0" type="submit">Search</button>
+      </form>
     </div>
   </nav>
   <div class="container">
@@ -23,15 +44,15 @@
             <label for="exampleInputItem">Item for Sale:</label>
             <input type="item" class="form-control" id="item-input" placeholder="Listing">
           </div>
-<!-- cloudinary code -->
+          <!-- cloudinary code -->
           <div class='card'>
-            <img src='' id='img-preview'/>
+            <img src='' id='img-preview' />
             <label class='file-upload-container' for='file-upload'>
-            <input id='file-upload' type='file' style='display:none;'>
-            Select and Image
+              <input id='file-upload' type='file' style='display:none;'>
+              Select and Image
             </label>
-            </div>
-<!-- cloudinary code end -->
+          </div>
+          <!-- cloudinary code end -->
           <div class="form-group">
             <label for="exampleInputSellerName">Seller Name:</label>
             <input type="email" class="form-control" id="seller-name-input" placeholder="Name">
@@ -48,6 +69,7 @@
     </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/login.js"></script>
+  <script type="text/javascript" src="js/sellers.js"></script>
 </body>
+
 </html>
