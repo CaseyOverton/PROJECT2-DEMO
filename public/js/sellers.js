@@ -4,7 +4,7 @@ $(document).ready(() => {
   const sellername = $("input#seller-name-input");
   const selleraddress = $("input#seller-address");
   const selleremail = $("input#seller-email");
-  const sellerbio = $("input#selelr-bio");
+  const sellerbio = $("input#seller-bio");
 
   // When the form is submitted, we validate there's an sellername and password entered
   ('#sellerform').on("submit", event => {
@@ -21,7 +21,7 @@ $(document).ready(() => {
 
     $.ajax("/api/newseller", {
       type: "POST",
-      data: newitem
+      data: newseller
   }).then(function () {
       console.log("Added a New Item");
       location.reload();
@@ -32,5 +32,5 @@ $(document).ready(() => {
 
  
   
-  });
+});
 
