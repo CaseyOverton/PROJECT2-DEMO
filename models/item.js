@@ -8,19 +8,19 @@ module.exports = function(sequelize, DataTypes) {
     const Item = sequelize.define('Item', {
        item_name: {
            type: DataTypes.STRING,
-           allowNull: false
+           allowNull: true
        },
        item_price: {
            type: DataTypes.INTEGER,
-           allowNull: false,
+           allowNull: true,
        },
        seller_contact: {
            type: DataTypes.STRING,
-           defaultValue: false
+           
        },
        purchased: {
            type: DataTypes.BOOLEAN,
-           allowNull: false,
+           allowNull: true,
            defaultValue: false
        },
     });

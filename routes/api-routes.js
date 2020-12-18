@@ -29,14 +29,16 @@ module.exports = function(app) {
       seller_name: req.body.seller_name,
       sellers_address: req.body.sellers_address,
       sellers_email: req.body.sellers_email,
-      seller_bio: req.body.seller_bio,
-      item_name: req.body.item_name,
-      item_price: req.body.item_price,
+      
+   
     })
 
-//    db.Item.create({
-  //    item_name: req.body.item_name
-   //  })
+   db.Item.create({
+      item_name: req.body.item_name,
+      item_price: req.body.item_price,
+      seller_contact:req.body.sellers_email,
+
+    })
     
   });
 

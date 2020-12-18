@@ -16,7 +16,6 @@ $(document).ready(() => {
       seller_name:  sellername.val(),
       sellers_address:  selleraddress.val(),
       sellers_email:  selleremail.val(),
-      
       item_name: itemInput.val(),
       item_price: askingPrice.val(),
 
