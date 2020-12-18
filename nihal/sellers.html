@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>sellers</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../stylesheets/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="../public/main.html">YARD SALE</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../public/buyers.html">Buy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../public/sellers.html">Sell</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-light my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 mt-5">
+          <h2 class="text-center">Login Form</h2>
+          <form class="login">
+            <div class="form-group">
+              <label for="exampleInputItem">Item for Sale:</label>
+              <input
+                type="item"
+                class="form-control"
+                id="item-input"
+                placeholder="Listing"
+              />
+            </div>
+            <!-- cloudinary code -->
+            <div class="card">
+              <img src="" id="img-preview" />
+              <label class="file-upload-container" for="file-upload">
+                <input id="file-upload" type="file" style="display: none" />
+                Select an Image
+              </label>
+            </div>
+            <!-- cloudinary code end -->
+            <div class="form-group">
+              <label for="exampleInputSellerName">Seller Name:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="seller-name-input"
+                placeholder="Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPrice">Asking Price:</label>
+              <input
+                type="price"
+                class="form-control"
+                id="price-input"
+                placeholder="Price"
+              />
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sellers.js"></script>
+  </body>
+</html>
