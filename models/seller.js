@@ -7,35 +7,26 @@ module.exports = function (sequelize, DataTypes) {
     seller_name: {
       type: DataTypes.STRING,
       required: true,
-      allowNull: false,
-      validate: {
-        is: ["^[a-z]+$", 'i'],
-      }
+      allowNull: true,
+  
     },
 
     sellers_address: {
       type: DataTypes.STRING,
       required: true,
-      allowNull: false,
+      allowNull: true,
     },
 
     sellers_email: {
       type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true
-      }
+      allowNull: true,
+      unique: false,
+      // validate: {
+      //   isEmail: true
+      // }
     },
 
-    seller_bio: {
-      type: DataTypes.STRING,
-      required: true,
-      allowNull: false,
-      validate: {
-        is: ["^[a-z]+$", 'i'],
-      }
-    }
+ 
  });
     Sellers.associate = function (models) {
     
