@@ -8,9 +8,9 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING,
       required: true,
       allowNull: false,
-      validate: {
-        is: ["^[a-z]+$", 'i'],
-      }
+     // validate: {
+       // is: ["^[a-z]+$", 'i'],
+      // }
     },
 
     sellers_address: {
@@ -28,14 +28,7 @@ module.exports = function (sequelize, DataTypes) {
       }
     },
 
-    seller_bio: {
-      type: DataTypes.STRING,
-      required: true,
-      allowNull: false,
-      validate: {
-        is: ["^[a-z]+$", 'i'],
-      }
-    }
+ 
  });
     Sellers.associate = function (models) {
     
