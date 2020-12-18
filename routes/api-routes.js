@@ -51,3 +51,14 @@ module.exports = function(app) {
     }
   });
 };
+
+// work on that with tutor
+// figure out how to make it work in this file
+const Item = require("../models/model");
+module.exports = function(app) {
+    app.get("/api/all", (req, res) => {
+        Item.findAll({}).then(function(results) {
+            res.json(results);
+        });
+    });
+};
