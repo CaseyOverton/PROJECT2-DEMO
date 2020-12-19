@@ -8,15 +8,31 @@ $('.btn').on('click', function () {
     $(this).siblings('.alert').removeClass('hide');
     
 });
+var posts;
+var blogContainer = $(".card-columns");
 
-$(".btn").on("click", function(event) {
-    var id = $(this).data("id");
-    $.ajax("/newseller" + id, {
-        type: "DELETE",
-    }).then(
-    function() {
-        console.log("deleted post", id);
-        location.reload();
+function getPosts(data) {
+    
+    $.get("/api/item", function(data) {
+      console.log("Posts", data);
+      posts = data;
+      if (!posts || !posts.length) {
+        displayEmpty(author);
+      }
+      else {
+        initializeRows();
+      }
+    });
+  }
+
+  function initializeRows() {
+    blogContainer.empty();
+    var postsToAdd = [];
+    for (var i = 0; i < posts.length; i++) {
+      postsToAdd.push(createNewRow(posts[i]));
     }
-    );
-});``
+    blogContainer.append(postsToAdd);
+  }
+  function createNewRow(post) {
+    
+  }

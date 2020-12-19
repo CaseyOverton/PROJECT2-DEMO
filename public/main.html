@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Yard Sale</title>
+  <title>GarageSwap</title>
   <link rel="stylesheet" href="stylesheets/main.css">
   <link rel="stylesheet" href='stylesheets/slider.css'>
   <script src="/js/slider.js"></script>
@@ -13,10 +13,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
+</head>
 
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a class="navbar-brand" href="/">YARD SALE</a>
+    <a class="navbar-brand" href="/">GarageSwap</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,22 +29,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/seller">Sell</a>
         </li>
-
       </ul>
-      <!-- <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-light my-sm-0" type="submit">Search</button>
-      </form> -->
-    </div>
   </nav>
-  <!-- <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4" id='jumbo'>yardSale</h1>
-        <p class="lead">Buying & Selling made easy!</p>
-      </div>
-    </div>
-    @@ -53,17 +53,48 @@  -->
-  
+  <div>
     <div class="ism-slider" data-transition_type="fade" data-play_type="loop" data-interval="3000" id="my-slider">
       <ol>
         <li>
@@ -75,56 +63,45 @@
     <!-- <p class="ism-badge" id="my-slider-ism-badge"><a class="ism-link" href="http://imageslidermaker.com" rel="nofollow">generated with ISM</a></p>
           </div>
      -->
+    <h1 class='shimmer'>GarageSwap</h1><Br><br>
+    <hr size="8" width="90%" color="black">
     <!-- Buy Section needs linking -->
     <div id='buyBox'>
       <a class='link' href="/buyers">BUY</a>
+      <p id="buyBlurb">At Garage-Swap, you'll find more than your neighbors' <br> outdated belongings. We store a sundry
+        of locally-owned <br> items, ranging from modern appliances to more intimate wares, <br> like a crib for infants
+        or even vintage jewelry. Peruse our inventory  and discover the value of trading within your community, 
+        rather than with globalized corporations. Engage your neighbors via Garage-Swap you'll be able to shop for
+        items at a good price,  all from the safety and confort of your own home! </p>
     </div>
     <!-- sell section needs linking  -->
     <div id='sellBox'>
       <a class='link' href="/seller">SELL</a>
+      <p id="sellBlurb">You'll also discover the values of a local market <br> by posting any items or your own that you
+        may no longer need. <br> Repurposing personal affects is a great way to reduce our carbon  footprint, as
+        well as to engage with your neighbors, especially  when we're encouraged to maintain a socially-responsible
+        distance.  So help the planet, and help your own community by posting those  items that you no longer
+        need. Happy swapping!</p>
     </div>
     <div id='categoryBox'>
       <h1 id='categoryh1'>Categories</h1><br>
       <!-- <div id='categoryList'> -->
       <ul style="list-style-type:none">
-        <a class="link2" href="#">Apparel</a><br>
-        <a class="link2" href="#">Automotive</a><br>
-        <a class="link2" href="#">Electronics</a><br>
-        <a class="link2" href="#">Furniture</a><br>
-        <a class="link2" href="#">Gaming</a><br>
-        <a class="link2" href="#">Home Decor'</a><br>
-        <a class="link2" href="#">Jewelry</a><br>
-        <a class="link2" href="#">Miscellaneous</a><br>
-        <a class="link2" href="#">Outdoor and Garden</a><br>
-        <a class="link2" href="#">Sporting Goods</a><br>
-        <a class="link2" href="#">Toys/Toddler</a><br>
+        <a class="link2">Apparel</a><br>
+        <a class="link2">Automotive</a><br>
+        <a class="link2">Electronics</a><br>
+        <a class="link2">Furniture</a><br>
+        <a class="link2">Gaming</a><br>
+        <a class="link2">Home Decor'</a><br>
+        <a class="link2">Jewelry</a><br>
+        <a class="link2">Miscellaneous</a><br>
+        <a class="link2">Outdoor and Garden</a><br>
+        <a class="link2">Sporting Goods</a><br>
+        <a class="link2">Toys/Toddler</a><br>
+        <br><br>
       </ul>
     </div>
-    <!-- dropdown box 
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-       <h1>Categories</h1>
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-        <li><button class="dropdown-item" type="button">Apparel</button></li>
-        <li><button class="dropdown-item" type="button">Appliances</button></li>
-        <li><button class="dropdown-item" type="button">Automotive</button></li>
-        <li><button class="dropdown-item" type="button">Electronics</button></li>
-        <li><button class="dropdown-item" type="button">Furniture</button></li>
-        <li><button class="dropdown-item" type="button">Gaming</button></li>
-        <li><button class="dropdown-item" type="button">Home Decor</button></li>
-        <li><button class="dropdown-item" type="button">Jewelry</button></li>
-        <li><button class="dropdown-item" type="button">Miscellaneous</button></li>
-        <li><button class="dropdown-item" type="button">Outdoor and Garden</button></li>
-        <li><button class="dropdown-item" type="button">Sporting Goods</button></li>
-        <li><button class="dropdown-item" type="button">Toys and Toddler</button></li>
-      </ul>
-    </div>
-</div> -->
-    <!-- <div id='bodyText'>
-  <p>Why choose YardSale?</p>
-  <p>A local way to buy/sell goods. We make it EASY.</p>
-</div> -->
+  
 </body>
 
 </html>
