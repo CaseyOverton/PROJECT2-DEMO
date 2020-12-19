@@ -37,6 +37,7 @@ module.exports = function(app) {
       item_name: req.body.item_name,
       item_price: req.body.item_price,
       sellers_email: req.body.sellers_email,
+      sellers_bio: req.body.sellers_bio,
       
     })
     // we havent deleted just becuase our app is finally starting to work

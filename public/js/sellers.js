@@ -4,6 +4,7 @@ $(document).ready(() => {
   const sellername = $("#seller-name-input");
   console.log(sellername)
   const sellerBio = $("#seller-bio");
+  console.log(sellerBio)
   const selleremail = $("#seller-email");
  
   const itemInput = $("#item-input");
