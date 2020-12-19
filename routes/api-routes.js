@@ -34,9 +34,9 @@ module.exports = function(app) {
     console.log(req.body)
     db.Sellers.create({
       seller_name: req.body.seller_name,
-      sellers_address: req.body.sellers_address,
+      // sellers_address: req.body.sellers_address,
       sellers_email: req.body.sellers_email,
-      SellerId: req.body.SellerId,
+      // SellerId: req.body.SellerId,
     })
    db.Item.create({
      

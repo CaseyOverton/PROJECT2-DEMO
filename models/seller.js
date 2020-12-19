@@ -12,11 +12,11 @@ module.exports = function (sequelize, DataTypes) {
   
     },
 
-    sellers_address: {
-      type: DataTypes.STRING,
-      required: true,
-      allowNull: true,
-    },
+    // sellers_address: {
+    //   type: DataTypes.STRING,
+    //   required: true,
+    //   allowNull: true,
+    // },
 
     sellers_email: {
       type: DataTypes.STRING,
