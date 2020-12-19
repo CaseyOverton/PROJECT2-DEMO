@@ -11,28 +11,26 @@ $('.btn').on('click', function () {
 var posts;
 var blogContainer = $(".card-columns");
 
-function getPosts(data) {
-    
-    $.get("/api/item", function(data) {
-      console.log("Posts", data);
-      posts = data;
-      if (!posts || !posts.length) {
-        displayEmpty(author);
-      }
-      else {
-        initializeRows();
-      }
-    });
-  }
+$.get("/api/item", function(data) {
 
-  function initializeRows() {
-    blogContainer.empty();
-    var postsToAdd = [];
-    for (var i = 0; i < posts.length; i++) {
-      postsToAdd.push(createNewRow(posts[i]));
+    if (data.length !== 0) {
+  
+      for (var i = 0; i < data.length; i++) {
+  
+        var row = $("<div>");
+        row.addClass("chirp");
+  
+        row.append("<p>" + data[i].item_name + " chirped.. </p>");
+        row.append("<p>" + data[i].item_price + "</p>");
+       
+  
+        blogcontainer.prepend(row);
+  
+      }
+  
     }
-    blogContainer.append(postsToAdd);
-  }
-  function createNewRow(post) {
-    
-  }
+  
+  });
+  
+
+  
