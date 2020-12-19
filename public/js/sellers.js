@@ -3,7 +3,7 @@ $(document).ready(() => {
   
   const sellername = $("#seller-name-input");
   console.log(sellername)
-  // const selleraddress = $("#seller-address");
+  const sellerBio = $("#seller-bio");
   const selleremail = $("#seller-email");
  
   const itemInput = $("#item-input");
@@ -14,8 +14,8 @@ $(document).ready(() => {
     event.preventDefault();
     var newseller= {
       seller_name:  sellername.val(),
-      // sellers_address:  selleraddress.val(),
       sellers_email:  selleremail.val(),
+      sellers_bio:  sellerBio.val(),
       item_name: itemInput.val(),
       item_price: askingPrice.val(),
 
@@ -35,7 +35,7 @@ $(document).ready(() => {
   $("#seller-email").val("");
   $("#item-input").val("");
   $("#price-input").val("");
-
+  $("#seller-bio").val("");
 });
 
  

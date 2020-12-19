@@ -34,14 +34,13 @@ module.exports = function(app) {
     console.log(req.body)
     db.Sellers.create({
       seller_name: req.body.seller_name,
-      // sellers_address: req.body.sellers_address,
-      sellers_email: req.body.sellers_email,
-      // SellerId: req.body.SellerId,
-    })
-   db.Item.create({
-     
       item_name: req.body.item_name,
       item_price: req.body.item_price,
+      sellers_email: req.body.sellers_email,
+      
+    })
+    // we havent deleted just becuase our app is finally starting to work
+   db.Item.create({
       seller_contact:req.body.sellers_email,
     })
     
