@@ -18,13 +18,13 @@ $.get("/api/item", function(data) {
       for (var i = 0; i < data.length; i++) {
   
         var row = $("<div>");
-        row.addClass("chirp");
+        row.addClass("card");
   
         row.append("<p>" + data[i].item_name + " chirped.. </p>");
         row.append("<p>" + data[i].item_price + "</p>");
        
   
-        blogcontainer.prepend(row);
+        blogContainer.prepend(row);
   
       }
   
