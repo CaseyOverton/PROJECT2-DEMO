@@ -19,4 +19,4 @@ $(".btn").on("click", function(event) {
         location.reload();
     }
     );
-});
+});``
